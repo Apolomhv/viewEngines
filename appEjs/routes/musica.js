@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/musica', (req, res) => {
+router.get('/', (req, res) => {
   res.render('musica', { title: 'Biblioteca Musical' })
 })
 
