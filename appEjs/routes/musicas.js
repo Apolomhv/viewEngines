@@ -6,11 +6,11 @@ router.get('/', (req, res) => {
 })
 
 router.get('/musica/artistas', (req, res) => {
-  res.render('artistas')
+  res.render('artistas', { title: 'Artistas' })
 })
 
 router.get('/musica/albums', (req, res) => {
-  res.render('albums')
+  res.render('albums', { title: 'Albuns Online' })
 })
 
 module.exports = router;
